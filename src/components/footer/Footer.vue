@@ -7,14 +7,19 @@
     <section class="footer_body AIC JCSB">
       <section class="down_footer_info DF AIC JCSB">
         <div class="DF AIC">
-          <img class="down_footer_info-logo" src="/Logo.svg" alt="Logo" srcset=""/>
+          <div class="down_footer_info_logo">
+            <img class="down_footer_info_logo-img" src="/Logo.svg" alt="Logo" srcset=""/>
+          </div>
           <p class="down_footer_info-text">Радовать людей — это наша работа</p>
         </div>
-        <nav class="color_2783FE">
+        <nav class="down_footer_info_nav color_2783FE">
           <ul class="DF">
-            <li>Политика безопасности</li>
-            <li>Контакты</li>
-            <li>Партнерам</li>
+            <li class="down_footer_info_nav-pharagraph">
+              <a class="down_footer_info_nav-link" href="#"></a> Политика безопасности</li>
+            <li class="down_footer_info_nav-pharagraph">
+              <a class="down_footer_info_nav-link" href="#"></a> Контакты</li>
+            <li class="down_footer_info_nav-pharagraph">
+              <a class="down_footer_info_nav-link" href="#"></a> Партнерам</li>
           </ul>
         </nav>
         <div>
@@ -23,18 +28,18 @@
       </section>
       <section class="DF AIC JCSB">
         <div class="DF down_footer_social">
-          <div>
-            <img class="" src="/instagramm.svg" alt="instagramm" srcset=""/>
-          </div>
-          <div>
-            <img class="" src="/facebook.svg" alt="facebook" srcset=""/>
-          </div>
-          <div>
-            <img class="" src="/telegramm.svg" alt="telegramm" srcset=""/>
-          </div>
-          <div>
-            <img class="" src="/youtube.svg" alt="youtube" srcset=""/>
-          </div>
+          <a class="down_footer_social_logo" href="#">
+            <img class="down_footer_social_logo-img" src="/instagramm.svg" alt="instagramm" srcset=""/>
+          </a>
+          <a class="down_footer_social_logo" href="#">
+            <img class="down_footer_social_logo-img" src="/facebook.svg" alt="facebook" srcset=""/>
+          </a>
+          <a class="down_footer_social_logo" href="#">
+            <img class="down_footer_social_logo-img" src="/telegramm.svg" alt="telegramm" srcset=""/>
+          </a>
+          <a class="down_footer_social_logo" href="#">
+            <img class="down_footer_social_logo-img" src="/youtube.svg" alt="youtube" srcset=""/>
+          </a>
         </div>
         <p class="author">Дизайн сайта - Алесей Киселев</p>
       </section>

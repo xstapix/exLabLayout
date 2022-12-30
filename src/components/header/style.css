@@ -4,22 +4,43 @@
 }
 
 .header_body {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
 }
 
-ul {
-    list-style-type: none;
+.logo_header {
+    width: 121px;
 }
 
-.header_body nav li {
-    font-size: 16px;
+.logo_heade-img {
+    max-width: 100%;
+}
+
+.header_nav-paragraph {
     margin: 0 37px 0 0;
+    font-size: 16px;
     cursor: pointer;
+}
+
+.header_nav-paragraph:last-child {
+    margin-right: 0;
+}
+
+.header_nav-paragraph-link {
+    color: #2783FE;
+    text-decoration: none;
 }
 
 .lang {
     cursor: pointer;
+}
+
+.lang_flag {
+    width: 28px;
+}
+
+.lang_flag-img {
+    max-width: 100%;
 }
 
 .lang p {
