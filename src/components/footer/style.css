@@ -1,0 +1,45 @@
+.down_footer {
+    width: 100%;
+    padding: 70px 5px 130px;
+    background: #172C48;
+}
+
+.footer_body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.down_footer_info-logo {
+    width: 178px;
+    height: 70px;
+}
+
+.down_footer_info-text {
+    width: 129px;
+    margin: 0 0 0 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.down_footer_info li {
+    margin: 0 40px 0 0;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+}
+
+.down_footer_social {
+    margin: 30px 0 0;
+}
+
+.down_footer_social div {
+    margin: 0 10px 0 0;
+}
+
+.author {
+    margin: 30px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    color: #8B96A4;
+}

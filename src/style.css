@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+.DF {
+    display: flex;
+}
+
+.AIC {
+    align-items: center;
+}
+
+.JCSB {
+    justify-content: space-between;
+}
+
+.color_2783FE {
+    color: #2783FE;
+}
