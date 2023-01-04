@@ -1,0 +1,49 @@
+.sendBody{
+  position: relative;
+}
+.sendButton{
+  position: absolute;
+  z-index: 101;
+  padding: 17.5px 33px;
+  width: 311px;
+  background: linear-gradient(174.82deg, #7BC0FF 4.38%, #2783FE 96.06%);
+  box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25);
+  border-radius: 113px;
+  border: none;
+  cursor: pointer;
+}
+.sendButton:hover{
+  background: linear-gradient(174.82deg, #C1E1FF 4.38%, #4595FF 96.06%);
+  box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25);
+  border-radius: 113px;
+}
+.sendButton_text{
+  margin: 0 15px 0 0;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+
+.plug_sendButton{
+  position: absolute;
+  top: 8px;
+  z-index: 100;
+  width: 311px;
+  height: 70px;
+  background: #2783FE;
+  box-shadow: 0px 1px 2px rgba(123, 97, 255, 0.25);
+  border-radius: 72px;
+}
+
+.plug_shadow{
+  position: absolute;
+  top: 34px;
+  left: 35px;
+  z-index: 100;
+  width: 243px;
+  height: 55px;
+  background: #0C6DEE;
+  opacity: 0.8;
+  filter: blur(17.5px);
+  border-radius: 72px;
+}

@@ -1,10 +1,12 @@
 .container {
+    position: relative;
     width: 100%;
+    height: 91vh;
 }
 
 .background {
     width: 100%;
-    height: 790px;
+    height: 90%;
     margin: 0 auto;
     background: url('/helloBlock.jpg');
     background-size: cover;
@@ -12,7 +14,7 @@
 
 .cloud {
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     bottom: 0;
     left: 0;
     right: 0;
@@ -23,11 +25,163 @@
     background-size: cover;
 }
 
+.girl_img{
+    position: absolute;
+    z-index: 7;
+    top: 0;
+    right: 18vw;
+}
+
+.prise{
+    position: absolute;
+    z-index: 6;
+    top: 7vh;
+    right: 21.6vw;
+}
+
+.prise2{
+    position: absolute;
+    z-index: 5;
+    top: 29vh;
+    right: 17vw;
+}
+
+.balloon{
+    position: absolute;
+    z-index: 5;
+    top: 9.5vh;
+    right: 27.8vw;
+}
+
 .helloBlock {
     position: absolute;
-    top: 200px;
+    top: 100px;
     left: 0;
     right: 0;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.hello_text{
+    width: 693px;
+    margin: 0 0 27px 0;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 70px;
+    background: linear-gradient(95.89deg, #7BC0FF -9.88%, #2783FE 82.48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.hello_checkMark{
+    margin: 0 0 0 10px;
+    font-size: 25px;
+    color: #172C48;
+}
+
+.hello_checkMark_paragraph{
+    margin: 0 0 15px 0;
+}
+
+.send-watch{
+    width: 752px;
+    margin: 75px 0 0 0;
+}
+
+.watch{
+    position: relative;
+    float: right;
+}
+
+.watch_text{
+    position: relative;
+    z-index: 10;
+    width: 176px;
+    margin: 0;
+}
+.watch_text_pharagraph{
+    margin: 12px 0 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: #172C48;
+}
+.watch_text_second-pharagraph{
+    margin: 5px 0 0;
+    font-size: 13px;
+    font-weight: 300;
+    color: #516176;
+}
+.watch_play{
+    width: 74px;
+    position: relative;
+}
+
+.watch_play_img{
+    position: absolute;
+    max-width: 100%;
+    left: -110px;
+    z-index: 10;
+    cursor: pointer;
+}
+.circle_small{
+    position: absolute;
+    left: -120px;
+    top: -10px;
+    z-index: 9;
+    width: 94px;
+    height: 94px; 
+    background: linear-gradient(174.82deg, #7BC0FF 4.38%, #2783FE 96.06%);
+    opacity: 0.1;
+    border-radius: 113px;
+}
+.circle_big{
+    position: absolute;
+    left: -129px;
+    top: -20px;
+    z-index: 8;
+    width: 113px;
+    height: 113px; 
+    background: linear-gradient(174.82deg, #7BC0FF 4.38%, #2783FE 96.06%);
+    opacity: 0.1;
+    border-radius: 113px;
+}
+
+.white_shadow{
+    position: absolute;
+    top: 0;
+    z-index: 7;
+    left: -120px;
+    width: 296px;
+    height: 81px;
+    background: #FFFFFF;
+    filter: blur(12px);
+    border-radius: 82px;
+}
+
+.howItWorks{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.howItWorks_header{
+    font-weight: 700;
+    font-size: 50px;    
+    text-align: center;
+    background: linear-gradient(95.89deg, #7BC0FF -9.88%, #2783FE 82.48%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.howItWorks_strong_text{
+    margin: 58px 0 0 58px;
+    font-weight: 700;
+    font-size: 27px;
+    color: #172C48;
+}
+.howItWorks_light_text{
+    margin: 16px 0 0 58px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #516176;
 }
