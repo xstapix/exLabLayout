@@ -8,7 +8,7 @@
       <section class="down_footer_info DF AIC JCSB">
         <div class="DF AIC">
           <div class="down_footer_info_logo">
-            <img class="down_footer_info_logo-img" src="/Logo.svg" alt="Logo" srcset=""/>
+            <img class="down_footer_info_logo-img" src="/bigLogo.svg" alt="Logo" srcset=""/>
           </div>
           <p class="down_footer_info-text">Радовать людей — это наша работа</p>
         </div>
@@ -22,12 +22,12 @@
               <a class="down_footer_info_nav-link" href="#"></a> Партнерам</li>
           </ul>
         </nav>
-        <div>
-          <img class="" src="/paySystem.svg" alt="paySystem" srcset=""/>
+        <div class="paySystem">
+          <img class="paySystem-img" src="/paySystem.svg" alt="paySystem" srcset=""/>
         </div>
       </section>
-      <section class="DF AIC JCSB">
-        <div class="DF down_footer_social">
+      <section class="DF AIC JCSB down_footer_social">
+        <div class="DF">
           <a class="down_footer_social_logo" href="#">
             <img class="down_footer_social_logo-img" src="/instagramm.svg" alt="instagramm" srcset=""/>
           </a>

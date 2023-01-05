@@ -8,69 +8,80 @@
 
 <template>
   <Header/>
-  <section class="container">
+  <section class="helloMain">
     <div class="background"></div>
-    <div class="cloud"></div>
-    <img class="girl_img" alt="girl" src="/girl.svg"/>
-    <img class="prise" alt="prise" src="/craftEnvelope.svg"/>
-    <img class="prise2" alt="prise" src="/craftEnvelope2.svg"/>
-    <img class="balloon" alt="balloon" src="/balloon.svg"/>
-    <section class="helloBlock">
+    <section class="helloBlock container">
       <h1 class="hello_text">JoyKa — эмоции в конверте Дари моменты радости вместе с JoyMail!</h1>
       <ul>
         <li class="DF AIC hello_checkMark_paragraph">
-          <div>
-            <img src="/coolicon.svg" alt="check mark"/>
+          <div class="checkMark">
+            <img class="checkMark-img" src="/coolicon.svg" alt="check mark"/>
           </div>
-          <p class="hello_checkMark _text">Доставка из любой точки мира</p>
+          Доставка из любой точки мира
         </li>
         <li class="DF AIC hello_checkMark_paragraph">
-          <div>
-            <img src="/coolicon.svg" alt="check mark"/>
+          <div class="checkMark">
+            <img class="checkMark-img" src="/coolicon.svg" alt="check mark"/>
           </div>
-          <p class="hello_checkMark _text">За 12 часов</p>
+          За 12 часов
         </li>
         <li class="DF AIC hello_checkMark_paragraph">
-          <div>
-            <img src="/coolicon.svg" alt="check mark"/>
+          <div class="checkMark">
+            <img class="checkMark-img" src="/coolicon.svg" alt="check mark"/>
           </div>
-          <p class="hello_checkMark _text">Лично в руки адресату</p>
+          Лично в руки адресату
         </li>
       </ul>
-      <div class="send-watch">
+      <div class="send-watch DF AIC JCSB">
         <SendButton/>
-        <section class="watch">
+        <section class="watch DF">
           <div class="watch_play">
             <img class="watch_play_img" src="/play.svg" alt="play" srcset="">
-            <div class="circle_small"></div>
-            <div class="circle_big"></div>
           </div>
           <div class="watch_text ">
             <p class="watch_text_pharagraph">Посмотрите видеообзор нашего подарка</p>
             <p class="watch_text_second-pharagraph">Время просмотра1:23 сек</p>
           </div>
-          <div class="white_shadow"></div>
         </section>
       </div>
     </section>
   </section>
-  <section class="howItWorks">
+  <section class="howItWorks container">
     <h3 class="howItWorks_header">Как это работает?</h3>
     <section class="DF AIC JCSB">
-      <div>
-        <img src="/makeSelfi.png" alt="make selfi"/>
-        <p class="howItWorks_strong_text">Человек<br/> делает селфи</p>
-        <p class="howItWorks_light_text">Вы делаете селфи <br/> или выбираете удачное фото<br/> из галереи JoyKa</p>
+      <div >
+        <div class="howItWorks_item">
+          <img class="howItWorks_item-img" src="/makeSelfi.png" alt="make selfi"/>
+        </div>
+        <div class="howItWorks_text">
+
+          <p class="howItWorks_strong_text">Человек делает селфи</p>
+          <p class="howItWorks_light_text">Вы делаете селфи или выбираете удачное фото из галереи JoyKa</p>
+        </div>
+      </div>
+      <div class="dots">
+        <img class="dots-img" src="/dotOrange.svg" alt="dots"/>
       </div>
       <div>
-        <img src="/craftEnvelope.png" alt="make Envelope"/>
-        <p class="howItWorks_strong_text">Конверт JoyKa<br/> с ярким фото</p>
-        <p class="howItWorks_light_text">Оставляете заявку на сайте<br/> или в приложении. Две минуты <br/> и JoyKa готова!</p>
+        <div class="howItWorks_item">
+          <img class="howItWorks_item-img" src="/craftEnvelopeGirl.png" alt="make Envelope"/>
+        </div>
+        <div class="howItWorks_text">
+          <p class="howItWorks_strong_text">Конверт JoyKa с ярким фото</p>
+          <p class="howItWorks_light_text">Оставляете заявку на сайте или в приложении. Две минуты  и JoyKa готова!</p>
+        </div>
+      </div>
+      <div class="dots">
+        <img src="/dotBlue.svg" alt="dots"/>
       </div>
       <div>
-        <img src="/Courier.png" alt="Courier"/>
-        <p class="howItWorks_strong_text">Курьер<br/> несёт JoyKa</p>
-        <p class="howItWorks_light_text">Распечатанную фотографию<br/> в красивом конверте курьер<br/> доставит лично в руки адресату</p>
+        <div class="howItWorks_item">
+          <img class="howItWorks_item-img" src="/Courier.png" alt="Courier"/>
+        </div>
+        <div class="howItWorks_text">  
+          <p class="howItWorks_strong_text">Курьер несёт JoyKa</p>
+          <p class="howItWorks_light_text">Распечатанную фотографию в красивом конверте курьер доставит лично в руки адресату</p>
+        </div>
       </div>
     </section>
   </section>

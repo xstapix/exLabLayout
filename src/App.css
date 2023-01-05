@@ -1,35 +1,30 @@
-.container {
+.helloMain {
     position: relative;
-    width: 100%;
-    height: 91vh;
+    height: 800px;
 }
 
 .background {
     width: 100%;
-    height: 90%;
-    margin: 0 auto;
-    background: url('/helloBlock.jpg');
-    background-size: cover;
-}
-
-.cloud {
-    position: absolute;
-    z-index: 10;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 324px;
-    margin: 0 auto;
-    background: url('/cloud.png');
-    background-size: cover;
-}
-
-.girl_img{
-    position: absolute;
-    z-index: 7;
-    top: 0;
-    right: 18vw;
+    height: 100%;
+    background-image:  url('/cloud.png'), 
+        url('/girl.svg'),
+        url('/craftEnvelope.svg'), 
+        url('/craftEnvelope2.svg'), 
+        url('/balloon.svg'), 
+        url('/helloBlock.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 100% 324px, 
+        auto, 
+        auto,
+        auto,
+        auto,
+        cover;
+    background-position: bottom -100px left,  
+        calc(50% + 230px), 
+        calc(50% + 370px) 99px,
+        calc(50% + 460px) 280px,
+        calc(50% + 90px) 100px,
+        top left;
 }
 
 .prise{
@@ -54,12 +49,7 @@
 }
 
 .helloBlock {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    right: 0;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: -700px auto;
 }
 
 .hello_text{
@@ -73,14 +63,20 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-.hello_checkMark{
-    margin: 0 0 0 10px;
+
+.hello_checkMark_paragraph{
+    margin: 0 0 15px 0;
     font-size: 25px;
     color: #172C48;
 }
 
-.hello_checkMark_paragraph{
-    margin: 0 0 15px 0;
+.checkMark{
+    margin: 0 10px 0 0;
+    height: 20px;
+}
+
+.checkMark-img{
+    max-height: 100%;
 }
 
 .send-watch{
@@ -89,15 +85,20 @@
 }
 
 .watch{
-    position: relative;
-    float: right;
+}
+
+.watch_play{
+    width: 74px;
+}
+
+.watch_play_img{
+    max-width: 100%;
+    cursor: pointer;
 }
 
 .watch_text{
-    position: relative;
-    z-index: 10;
     width: 176px;
-    margin: 0;
+    margin: 0 0 0 40px;
 }
 .watch_text_pharagraph{
     margin: 12px 0 0;
@@ -111,19 +112,7 @@
     font-weight: 300;
     color: #516176;
 }
-.watch_play{
-    width: 74px;
-    position: relative;
-}
-
-.watch_play_img{
-    position: absolute;
-    max-width: 100%;
-    left: -110px;
-    z-index: 10;
-    cursor: pointer;
-}
-.circle_small{
+/* .circle_small{
     position: absolute;
     left: -120px;
     top: -10px;
@@ -144,9 +133,9 @@
     background: linear-gradient(174.82deg, #7BC0FF 4.38%, #2783FE 96.06%);
     opacity: 0.1;
     border-radius: 113px;
-}
+} */
 
-.white_shadow{
+/* .white_shadow{
     position: absolute;
     top: 0;
     z-index: 7;
@@ -156,10 +145,9 @@
     background: #FFFFFF;
     filter: blur(12px);
     border-radius: 82px;
-}
+} */
 
 .howItWorks{
-    width: 1300px;
     margin: 0 auto;
 }
 
@@ -173,15 +161,33 @@
     background-clip: text;
 }
 
+.howItWorks_text{
+    width: 250px;
+    margin: 0 0 0 58px;
+}
+
 .howItWorks_strong_text{
-    margin: 58px 0 0 58px;
+    margin: 0;
     font-weight: 700;
     font-size: 27px;
     color: #172C48;
 }
 .howItWorks_light_text{
-    margin: 16px 0 0 58px;
+    margin: 16px 0 0 0;
     font-weight: 400;
     font-size: 18px;
     color: #516176;
+}
+.howItWorks_item{
+    height: 343px;
+}
+.howItWorks_item-img{
+    max-height: 100%;
+}
+.dots{
+    margin: -130px 0 0;
+    height: 15px;
+}
+.dots-img{
+    max-height: 100%;
 }

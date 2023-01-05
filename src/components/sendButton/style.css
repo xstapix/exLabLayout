@@ -1,11 +1,5 @@
-.sendBody{
-  position: relative;
-}
 .sendButton{
-  position: absolute;
-  z-index: 101;
-  padding: 17.5px 33px;
-  width: 311px;
+  padding: 17px 33px;
   background: linear-gradient(174.82deg, #7BC0FF 4.38%, #2783FE 96.06%);
   box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25);
   border-radius: 113px;
@@ -14,14 +8,21 @@
 }
 .sendButton:hover{
   background: linear-gradient(174.82deg, #C1E1FF 4.38%, #4595FF 96.06%);
-  box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25);
-  border-radius: 113px;
 }
 .sendButton_text{
   margin: 0 15px 0 0;
   font-weight: 700;
   font-size: 20px;
   color: #fff;
+}
+.envelope{
+  height: 37px;
+}
+.envelope-img{
+  max-height: 100%;
+}
+.sendButton::after{
+  
 }
 
 .plug_sendButton{
