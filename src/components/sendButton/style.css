@@ -1,4 +1,5 @@
 .sendButton{
+  position: relative;
   padding: 17px 33px;
   background: linear-gradient(174.82deg, #7BC0FF 4.38%, #2783FE 96.06%);
   box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25);
@@ -8,6 +9,35 @@
 }
 .sendButton:hover{
   background: linear-gradient(174.82deg, #C1E1FF 4.38%, #4595FF 96.06%);
+}
+.sendButton:active{
+  box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25);
+  background: #7BC0FF;
+}
+.sendButton::before{
+  position: absolute;
+  left: 0;
+  top: 5px;
+  content: '';
+  width: 311px;
+  height: 70px;
+  background: #2783FE;
+  box-shadow: 0px 1px 2px rgba(123, 97, 255, 0.25);
+  border-radius: 72px;
+}
+.sendButton::after{
+  position: absolute;
+  content: '';
+  top: 34px;
+  left: 35px;
+  z-index: 100;
+  width: 243px;
+  height: 55px;
+  background: #0C6DEE;
+  opacity: 0.8;
+  filter: blur(17.5px);
+  border-radius: 72px;
+
 }
 .sendButton_text{
   margin: 0 15px 0 0;
@@ -21,11 +51,8 @@
 .envelope-img{
   max-height: 100%;
 }
-.sendButton::after{
-  
-}
 
-.plug_sendButton{
+/* .plug_sendButton{
   position: absolute;
   top: 8px;
   z-index: 100;
@@ -34,9 +61,9 @@
   background: #2783FE;
   box-shadow: 0px 1px 2px rgba(123, 97, 255, 0.25);
   border-radius: 72px;
-}
+} */
 
-.plug_shadow{
+/* .plug_shadow{
   position: absolute;
   top: 34px;
   left: 35px;
@@ -47,4 +74,4 @@
   opacity: 0.8;
   filter: blur(17.5px);
   border-radius: 72px;
-}
+} */

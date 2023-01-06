@@ -35,7 +35,7 @@
       <div class="lang DF">
         <p class="color_2783FE">{{state.lang}}</p>
         <div class="lang_flag">
-          <img class="lang_flag-img" src="/EN.svg" alt="flag" srcset=""/>
+          <img class="lang_flag-img" :src='`${state.lang == "EN" ? "/EN.svg" : "/RU.webp"}`' alt="flag" srcset=""/>
         </div>
         <div class="arrow_down"></div>
         <div class="lang_dropDown">

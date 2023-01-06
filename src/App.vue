@@ -53,8 +53,7 @@
         <div class="howItWorks_item">
           <img class="howItWorks_item-img" src="/makeSelfi.png" alt="make selfi"/>
         </div>
-        <div class="howItWorks_text">
-
+        <div class="howItWorks_text one">
           <p class="howItWorks_strong_text">Человек делает селфи</p>
           <p class="howItWorks_light_text">Вы делаете селфи или выбираете удачное фото из галереи JoyKa</p>
         </div>
@@ -66,7 +65,7 @@
         <div class="howItWorks_item">
           <img class="howItWorks_item-img" src="/craftEnvelopeGirl.png" alt="make Envelope"/>
         </div>
-        <div class="howItWorks_text">
+        <div class="howItWorks_text two">
           <p class="howItWorks_strong_text">Конверт JoyKa с ярким фото</p>
           <p class="howItWorks_light_text">Оставляете заявку на сайте или в приложении. Две минуты  и JoyKa готова!</p>
         </div>
@@ -78,16 +77,30 @@
         <div class="howItWorks_item">
           <img class="howItWorks_item-img" src="/Courier.png" alt="Courier"/>
         </div>
-        <div class="howItWorks_text">  
+        <div class="howItWorks_text three">  
           <p class="howItWorks_strong_text">Курьер несёт JoyKa</p>
           <p class="howItWorks_light_text">Распечатанную фотографию в красивом конверте курьер доставит лично в руки адресату</p>
         </div>
       </div>
     </section>
+    <section class="DF AIC howItWorks_happy_block">
+      <div class="howItWorks_happy">
+        <img class="howItWorks_happy-img" src="/happy.png" alt="happy" srcset="">
+      </div>
+      <div class="howItWorks_happy_content four">
+        <p class="howItWorks_happy_text-strong">
+          Адресат радуется полученной JoyKa
+        </p>
+        <p class="howItWorks_happy_text-light">
+          Ваше фото с личным посланием подарят близким хорошее настроение на весь день
+        </p>
+        <SendButton/>
+      </div>
+    </section>
+  </section>
+  <section class="occasionsToSend container">
+    
   </section>
   <Footer/>
 </template>
-
-<style scoped>
-</style>
 
