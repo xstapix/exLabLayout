@@ -1,5 +1,10 @@
+.sendButton_body{
+  position: relative;
+  display: inline-block;
+}
 .sendButton{
   position: relative;
+  z-index: 111;
   padding: 17px 33px;
   background: linear-gradient(174.82deg, #7BC0FF 4.38%, #2783FE 96.06%);
   box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25);
@@ -14,24 +19,25 @@
   box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.25);
   background: #7BC0FF;
 }
-.sendButton::before{
+.sendButton_body::before{
   position: absolute;
   left: 0;
   top: 5px;
+  z-index: 1;
   content: '';
-  width: 311px;
-  height: 70px;
+  width: 100%;
+  height: 100%;
   background: #2783FE;
   box-shadow: 0px 1px 2px rgba(123, 97, 255, 0.25);
   border-radius: 72px;
 }
-.sendButton::after{
+.sendButton_body::after{
   position: absolute;
   content: '';
   top: 34px;
-  left: 35px;
-  z-index: 100;
-  width: 243px;
+  left: 10%;
+  z-index: 2;
+  width: 80%;
   height: 55px;
   background: #0C6DEE;
   opacity: 0.8;

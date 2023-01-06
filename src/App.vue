@@ -2,6 +2,7 @@
   import Header from '@/components/header/Header.vue'
   import Footer from '@/components/footer/Footer.vue'
   import SendButton from '@/components/sendButton/SendButton.vue'
+  import Swiper from '@/components/swiper/Swiper.vue'
 
   import './App.css'
 </script>
@@ -98,8 +99,12 @@
       </div>
     </section>
   </section>
-  <section class="occasionsToSend container">
-    
+  <section>
+    <div class="occasionsToSend-background"></div>
+    <section class="occasionsToSend-content ">
+      <p class="occasionsToSend-content_header">Поводы для отправки</p>
+      <Swiper/>
+    </section>
   </section>
   <Footer/>
 </template>
