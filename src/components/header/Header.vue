@@ -45,7 +45,7 @@
               <img class="lang_flag-img" src="/RU.webp" alt="flag" srcset=""/>
             </div>
           </div>
-          <div class="DF JCSB"  @click="state.lang = 'EN'">
+          <div class="DF JCSB" @click="state.lang = 'EN'">
             <p class="color_2783FE">EN</p>
             <div class="lang_flag">
               <img class="lang_flag-img" src="/EN.svg" alt="flag" srcset=""/>

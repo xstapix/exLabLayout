@@ -106,6 +106,21 @@
       <Swiper/>
     </section>
   </section>
+  <section class="quiz">
+    <div class="quiz_body DF AIC">
+      <div class="quiz_body_girl">
+        <img class="quiz_body_girl-img" src="/quizGirl.png" alt="">
+      </div>
+      <div class="quiz_body_options">
+        <p class="quiz_body_options-steps">Шаг 1 из 5</p>
+        <div class="quiz_body_options_progressBar">
+          <div class="quiz_body_options_progressBar-moving"></div>
+        </div>
+        <p class="quiz_body_options_title">Выберите страну отправления</p>
+        
+      </div>
+    </div>
+  </section>
   <Footer/>
 </template>
 
