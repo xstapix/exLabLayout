@@ -39,18 +39,10 @@
         </div>
         <div class="arrow_down"></div>
         <div class="lang_dropDown">
-          <div class="DF JCSB lang_margin_fix" @click="state.lang = 'RU'">
-            <p class="color_2783FE">RU</p>
-            <div class="lang_flag">
-              <img class="lang_flag-img" src="/RU.webp" alt="flag" srcset=""/>
-            </div>
-          </div>
-          <div class="DF JCSB" @click="state.lang = 'EN'">
-            <p class="color_2783FE">EN</p>
-            <div class="lang_flag">
-              <img class="lang_flag-img" src="/EN.svg" alt="flag" srcset=""/>
-            </div>
-          </div>
+          <ul>
+            <li class="lang_dropDown-item_ru lang_margin_fix color_2783FE" @click="state.lang = 'RU'">RU</li>
+            <li class="lang_dropDown-item_en color_2783FE" @click="state.lang = 'EN'">EN</li>
+          </ul>
         </div>
       </div>
     </section>

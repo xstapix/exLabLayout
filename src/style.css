@@ -3,11 +3,18 @@
 body {
     margin: 0;
     padding: 0;
+    accent-color: #2783FE;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+}
+
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked) {
+    width: 20px;
+    height: 20px;
 }
 
 * {
@@ -31,6 +38,6 @@ ul {
     color: #2783FE;
 }
 
-.container{
+.container {
     width: 1220px;
 }

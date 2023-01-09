@@ -6,13 +6,6 @@
 
   import './style.css'
 
-  const onSwiper = (swiper) => {
-    console.log(swiper);
-  };
-  const onSlideChange = () => {
-    console.log('slide change');
-  };
-
   const state = reactive({
     swiperList: [
       {
@@ -21,7 +14,7 @@
         title: 'Удивить родных',
         text: 'Встретились со знаменитостью? Веселитесь на концерте любимой группы? Отдыхаете на экзотическом пляже? Такие фото обязательно должны быть в семейном альбоме!'
       },
-      {
+      { 
         id: 2,
         url: '/Rectangle 1741.png',
         title: 'Пригласить друзей на вечеринку',
