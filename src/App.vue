@@ -15,30 +15,70 @@
         question: 'Выберите страну отправления',
         answer: null,
         options: [
-          'Украина',
-          'Грузия',
-          'Тайланд',
-          'Испания'
+          {
+            name: 'Украина',
+            id: 'uk',
+            value: 0
+          },
+          {
+            name: 'Россия',
+            id: 'ru',
+            value: 1
+          },
+          {
+            name: 'Испания',
+            id: 'spa',
+            value: 2
+          },
+          {
+            name: 'Тайланд',
+            id: 'tad',
+            value: 3
+          }
         ]
       },
       {
         question: 'Выберите город отправления',
         answer: null,
         options: [
-          'Москва',
-          'Сочи',
-          'Воронеж',
-          'Краснодар'
+          {
+            name: 'Москва',
+            id: 'msk'
+          },
+          {
+            name: 'Сочи',
+            id: 'sch'
+          },
+          {
+            name: 'Воронеж',
+            id: 'vrn'
+          },
+          {
+            name: 'Краснодар',
+            id: 'kdr'
+          }
         ]
       },
       {
         question: 'Да?',
         answer: null,
         options: [
-          'Нет',
-          'Незнаю',
-          'Воронеж',
-          'Краснодар'
+          {
+            name: 'Да',
+            id: 'yes'
+          },
+          {
+            name: 'Нет',
+            id: 'no'
+          },
+          {
+            name: 'Может',
+            id: 'mb'
+          },
+          {
+            name: 'Не знаю',
+            id: 'dkn'
+          }
         ]
       }
     ]
@@ -49,21 +89,16 @@
   const handlerNextButton = () => {
     if (state.quizActiveQuestion !== state.quizQuestions.length-1) {
       state.quizActiveQuestion++
-    console.log(state.quizQuestions[state.quizActiveQuestion]);
-    console.log(state.quizActiveQuestion);
     }
   }
 
   const handlerPrevButton = () => {
     if (state.quizActiveQuestion !== 0) {
       state.quizActiveQuestion--
-    console.log(state.quizQuestions[state.quizActiveQuestion]);
-    console.log(state.quizActiveQuestion);
     }
   }
 
   const handlerSelectAnswer = (e) => {
-    
     state.quizQuestions[state.quizActiveQuestion].answer = e.target.value
     console.log(state.quizQuestions[state.quizActiveQuestion]);
     console.log(state.quizActiveQuestion);
@@ -175,25 +210,19 @@
         <div>
           <p class="quiz_body_options_title">{{ state.quizQuestions[state.quizActiveQuestion].question }}</p>
           <div class="DF JCSB">
-            <label for='f' class="quiz_body_options_item_preview">
-              <img class="quiz_body_options_item_preview-img" src="/Rectangle 1757.png" alt="country">
-              <input class="quiz_body_options_item-check" @click="handlerSelectAnswer" id="f" name="city" value="0" type="radio" checked> 
-              <p class="quiz_body_options_item-name">{{state.quizQuestions[state.quizActiveQuestion].options[0]}}</p>
-            </label>
-            <label for='s' class="quiz_body_options_item_preview">
-              <img class="quiz_body_options_item_preview-img" src="/Rectangle 1758.png" alt="country">
-              <input class="quiz_body_options_item-check" @click="handlerSelectAnswer" id="s" name="city" value="1" type="radio"> 
-              <p class="quiz_body_options_item-name">{{state.quizQuestions[state.quizActiveQuestion].options[1]}}</p>
-            </label>
-            <label for='t' class="quiz_body_options_item_preview">
-              <img class="quiz_body_options_item_preview-img" src="/Rectangle 1759.png" alt="country">
-              <input class="quiz_body_options_item-check" @click="handlerSelectAnswer" id="t" name="city" value="2" type="radio"> 
-              <p class="quiz_body_options_item-name">{{state.quizQuestions[state.quizActiveQuestion].options[2]}}</p>
-            </label>
-            <label for='fo' class="quiz_body_options_item_preview">
-              <img class="quiz_body_options_item_preview-img" src="/Rectangle 1757.png" alt="country">
-              <input class="quiz_body_options_item-check" @click="handlerSelectAnswer" id="fo" name="city" value="3" type="radio"> 
-              <p class="quiz_body_options_item-name">{{state.quizQuestions[state.quizActiveQuestion].options[3]}}</p>
+            <label 
+              v-for="item in state.quizQuestions[state.quizActiveQuestion].options" 
+              :for='item.id' 
+              class="quiz_body_options_item_preview">
+              <img 
+                class="quiz_body_options_item_preview-img" 
+                src="/Rectangle 1757.png" alt="country">
+              <input 
+                class="quiz_body_options_item-check" 
+                @click="handlerSelectAnswer" 
+                :id='item.id' name="city" :value='item.value' type="radio" 
+                :checked='state.quizQuestions[state.quizActiveQuestion].answer === null ? false : true'> 
+              <p class="quiz_body_options_item-name">{{item.name}}</p>
             </label>
           </div>
           <div class="DF JCSB quiz_margin_button_fix">
