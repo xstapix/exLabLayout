@@ -12,8 +12,16 @@
     height: 48px;
 }
 
-.logo_heade-img {
+.logo_header-img {
     max-height: 100%;
+}
+
+.header_nav-modil {
+    display: none;
+}
+
+.header_nav-modil_menu {
+    display: none;
 }
 
 .header_nav-paragraph {

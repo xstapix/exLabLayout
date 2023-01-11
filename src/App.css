@@ -161,7 +161,7 @@
 .howItWorks_text {
     position: relative;
     width: 250px;
-    margin: 0 0 0 58px;
+    margin: 48px 0 0 58px;
 }
 
 .one::before,
@@ -211,12 +211,40 @@
     color: #516176;
 }
 
-.howItWorks_item {
+.howItWorks_item-first {
+    width: 336px;
+    height: 330px;
+}
+
+.howItWorks_item-img-first {
+    width: 336px;
+    height: 330px;
+}
+
+.howItWorks_item-two {
+    position: relative;
+    width: 336px;
+    height: 330px;
+}
+
+.howItWorks_item-img-two {
+    position: absolute;
+    bottom: 0;
+    width: 314px;
     height: 343px;
 }
 
-.howItWorks_item-img {
-    max-height: 100%;
+.howItWorks_item-three {
+    position: relative;
+    width: 336px;
+    height: 330px;
+}
+
+.howItWorks_item-img-three {
+    position: absolute;
+    bottom: 0;
+    width: 377px;
+    height: 370px;
 }
 
 .dots {

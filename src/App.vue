@@ -7,6 +7,7 @@
   import { reactive } from 'vue';
 
   import './App.css'
+  import './media_App.css'
 
   const state = reactive({
     quizActiveQuestion: 0,
@@ -18,22 +19,26 @@
           {
             name: 'Украина',
             id: 'uk',
-            value: 0
+            value: 0,
+            selected: true
           },
           {
             name: 'Россия',
             id: 'ru',
-            value: 1
+            value: 1,
+            selected: false
           },
           {
             name: 'Испания',
             id: 'spa',
-            value: 2
+            value: 2,
+            selected: false
           },
           {
             name: 'Тайланд',
             id: 'tad',
-            value: 3
+            value: 3,
+            selected: false
           }
         ]
       },
@@ -43,19 +48,27 @@
         options: [
           {
             name: 'Москва',
-            id: 'msk'
+            id: 'msk',
+            value: 0,
+            selected: true
           },
           {
             name: 'Сочи',
-            id: 'sch'
+            id: 'sch',
+            value: 1,
+            selected: false
           },
           {
             name: 'Воронеж',
-            id: 'vrn'
+            id: 'vrn',
+            value: 2,
+            selected: false
           },
           {
             name: 'Краснодар',
-            id: 'kdr'
+            id: 'kdr',
+            value: 3,
+            selected: false
           }
         ]
       },
@@ -65,19 +78,26 @@
         options: [
           {
             name: 'Да',
-            id: 'yes'
+            id: 'yes',
+            value: 0,
+            selected: true
           },
           {
             name: 'Нет',
-            id: 'no'
+            id: 'no',
+            value: 1,
+            selected: false
           },
           {
             name: 'Может',
-            id: 'mb'
+            id: 'mb',
+            value: 2,
+            selected: false
           },
           {
             name: 'Не знаю',
-            id: 'dkn'
+            id: 'dkn',
+            value: 3
           }
         ]
       }
@@ -100,8 +120,12 @@
 
   const handlerSelectAnswer = (e) => {
     state.quizQuestions[state.quizActiveQuestion].answer = e.target.value
-    console.log(state.quizQuestions[state.quizActiveQuestion]);
-    console.log(state.quizActiveQuestion);
+
+    for (let item in state.quizQuestions[state.quizActiveQuestion].options) {
+      state.quizQuestions[state.quizActiveQuestion].options[item].selected = false
+    }
+
+    state.quizQuestions[state.quizActiveQuestion].options[e.target.value].selected = true
   }
 
 </script>
@@ -123,9 +147,9 @@
           Лично в руки адресату
         </li>
       </ul>
-      <div class="send-watch DF AIC JCSB">
+      <div class="send-watch DF DB AIC JCSB">
         <SendButton/>
-        <section class="watch DF">
+        <section class="watch DF JCC">
           <div class="watch_play">
             <img class="watch_play_img" src="/play.svg" alt="play" srcset="">
           </div>
@@ -137,12 +161,13 @@
       </div>
     </section>
   </section>
+   <!-- 
   <section class="howItWorks container">
-    <h3 class="howItWorks_header">Как это работает?</h3>
+    <h2 class="howItWorks_header">Как это работает?</h2>
     <section class="DF AIC JCSB">
       <div >
-        <div class="howItWorks_item">
-          <img class="howItWorks_item-img" src="/makeSelfi.png" alt="make selfi"/>
+        <div class="howItWorks_item-first">
+          <img class="howItWorks_item-img-first" src="/makeSelfi.png" alt="make selfi"/>
         </div>
         <div class="howItWorks_text one">
           <p class="howItWorks_strong_text">Человек делает селфи</p>
@@ -153,8 +178,8 @@
         <img class="dots-img" src="/dotOrange.svg" alt="dots"/>
       </div>
       <div>
-        <div class="howItWorks_item">
-          <img class="howItWorks_item-img" src="/craftEnvelopeGirl.png" alt="make Envelope"/>
+        <div class="howItWorks_item-two">
+          <img class="howItWorks_item-img-two" src="/craftEnvelopeGirl.png" alt="make Envelope"/>
         </div>
         <div class="howItWorks_text two">
           <p class="howItWorks_strong_text">Конверт JoyKa с ярким фото</p>
@@ -165,8 +190,8 @@
         <img src="/dotBlue.svg" alt="dots"/>
       </div>
       <div>
-        <div class="howItWorks_item">
-          <img class="howItWorks_item-img" src="/Courier.png" alt="Courier"/>
+        <div class="howItWorks_item-three">
+          <img class="howItWorks_item-img-three" src="/Courier.png" alt="Courier"/>
         </div>
         <div class="howItWorks_text three">  
           <p class="howItWorks_strong_text">Курьер несёт JoyKa</p>
@@ -205,7 +230,9 @@
       <div class="quiz_body_options">
         <p class="quiz_body_options-steps">Шаг {{ state.quizActiveQuestion + 1 }} из {{ state.quizQuestions.length }}</p>
         <div class="quiz_body_options_progressBar">
-          <div class="quiz_body_options_progressBar-moving" :style="{width: deltaPercent * (state.quizActiveQuestion + 1)  + '%'}"></div>
+          <div 
+            class="quiz_body_options_progressBar-moving" 
+            :style="{width: deltaPercent * (state.quizActiveQuestion + 1)  + '%'}"></div>
         </div>
         <div>
           <p class="quiz_body_options_title">{{ state.quizQuestions[state.quizActiveQuestion].question }}</p>
@@ -221,7 +248,7 @@
                 class="quiz_body_options_item-check" 
                 @click="handlerSelectAnswer" 
                 :id='item.id' name="city" :value='item.value' type="radio" 
-                :checked='state.quizQuestions[state.quizActiveQuestion].answer === null ? false : true'> 
+                :checked='item.selected'> 
               <p class="quiz_body_options_item-name">{{item.name}}</p>
             </label>
           </div>
@@ -232,7 +259,7 @@
         </div>
       </div>
     </div>
-  </section>
-  <Footer/>
+  </section> -->
+  <!-- <Footer/> -->
 </template>
 

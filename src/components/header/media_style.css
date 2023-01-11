@@ -1,0 +1,44 @@
+@media (max-width: 428px) {
+    .top_header {
+        padding: 15px 20px;
+    }
+    .header_body {
+        width: 100%;
+    }
+    .header_nav {
+        display: none;
+    }
+    .logo_header {
+        height: 24px;
+    }
+    .header_nav-modil {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 15px 20px;
+        background-color: rgb(255, 255, 255);
+    }
+    .header_nav-paragraph {
+        margin: 0 0 20px;
+        font-size: 20px;
+    }
+    .header_nav-modil_close {
+        height: 34px;
+    }
+    .header_nav-modil_close-img {
+        max-height: 100%;
+    }
+    .header_nav-modil_menu {
+        display: block;
+    }
+    .header_nav-modil_menu {
+        width: 25px;
+    }
+    .header_nav-modil_menu-img {
+        max-width: 100%;
+    }
+}

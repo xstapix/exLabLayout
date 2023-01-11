@@ -26,6 +26,10 @@ input[type="radio"]:not(:checked) {
     display: flex;
 }
 
+.DN {
+    display: none;
+}
+
 .AIC {
     align-items: center;
 }
@@ -34,10 +38,24 @@ input[type="radio"]:not(:checked) {
     justify-content: space-between;
 }
 
+.JCE {
+    justify-content: end;
+}
+
 .color_2783FE {
     color: #2783FE;
 }
 
 .container {
     width: 1220px;
+}
+
+@media (max-width: 428px) {
+    .DB {
+        display: block;
+    }
+    .container {
+        width: 100%;
+        padding: 15px 20px !important;
+    }
 }

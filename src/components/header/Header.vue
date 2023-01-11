@@ -1,17 +1,19 @@
 <script setup>
   import { reactive } from 'vue';
   import './style.css'
+  import './media_style.css'
 
   const state = reactive({
-    lang: 'EN'
+    lang: 'EN',
+    menuActive: false
   })
 </script>
 
 <template>
   <header class="top_header container">
     <section class="header_body DF AIC JCSB">
-      <a class="logo_header" href="#">
-        <img class="logo_heade-img" src="/Logo.svg" alt="Logo" srcset=""/>
+      <a class="logo_header" href="/">
+        <img class="logo_header-img" src="/Logo.svg" alt="Logo" srcset=""/>
       </a>
       <nav class="header_nav">
         <ul class="DF" >
@@ -45,6 +47,31 @@
           </ul>
         </div>
       </div>
+      <div class="header_nav-modil_menu" @click="state.menuActive = !state.menuActive">
+        <img class="header_nav-modil_menu-img" src="/menu.svg" alt="" srcset="">
+      </div>
+      <nav :class="state.menuActive ? 'header_nav-modil' : 'DN'">
+        <div class="header_nav-modil_close DF JCE" @click="state.menuActive = !state.menuActive">
+          <img class="header_nav-modil_close-img" src="/close.svg" alt="" srcset="">
+        </div>
+        <ul class="DB" >
+          <li class="header_nav-paragraph">
+            <a class=" header_nav-paragraph-link" href="#">Как это работает</a>
+          </li>
+          <li class="header_nav-paragraph">
+            <a class="header_nav-paragraph-link" href="#">Кто мы</a>
+          </li>
+          <li class="header_nav-paragraph">
+            <a class="header_nav-paragraph-link" href="#">Поводы для отправки</a>
+          </li>
+          <li class="header_nav-paragraph">
+            <a class="header_nav-paragraph-link" href="#">FAQ</a>
+          </li>
+          <li class="header_nav-paragraph">
+            <a class="header_nav-paragraph-link" href="#">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
     </section>
   </header>
 </template>

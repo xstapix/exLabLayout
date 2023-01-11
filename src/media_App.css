@@ -1,0 +1,38 @@
+@media (max-width: 428px) {
+    .background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url('/cloud.png'), url('/girl.svg'), url('/craftEnvelope-mobil.svg'), url('/craftEnvelope2-mobil.svg'), url('/Balloon-mobil.svg'), url('/helloBlock.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 324px, 100% 421px, auto, auto, auto, cover;
+        background-position: bottom -100px left, top 230px center, calc(50% + 60px) 340px, calc(50% + 105px) 420px, calc(50% - 40px) 371px, top left;
+    }
+    .helloBlock {
+        padding: 0;
+    }
+    .hello_text {
+        width: 100%;
+        font-size: 30px;
+        line-height: 120%;
+    }
+    .helloBlock ul {
+        width: 100%;
+    }
+    .hello_checkMark_paragraph {
+        font-size: 20px;
+    }
+    .hello_checkMark_paragraph::before {
+        width: 16px;
+        height: 15px;
+        background-repeat: no-repeat;
+        background: url('/coolicon-mobil.svg');
+    }
+    .send-watch {
+        width: 100%;
+        margin: 320px 0 0;
+    }
+    .watch {
+        margin: 32px 0 0;
+    }
+}

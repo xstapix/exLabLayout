@@ -56,8 +56,22 @@
         title: 'Вдохновить близких своими победами',
         text: 'Забил решающий гол? Покорил очередкую вершину? Отправь JoyKa — пусть друзья разделят с тобой радость момента.'
       },
-    ]
+    ],
+    sliderCounter: 1
   })
+
+  const handlerPrev = () => {
+    if (state.sliderCounter != 1) {
+      state.sliderCounter--
+    }
+  }
+
+  const handlerNext = () => {
+    if (state.sliderCounter != 8) {
+      state.sliderCounter++
+    }
+  }
+  
 </script>
 <template>
   <swiper
@@ -65,7 +79,7 @@
     :slides-per-view="3"
     :space-between="30"
     :navigation="{ nextEl: '.nextArrow', prevEl: '.prevArrow', hideOnClick: true,}"
-    :pagination="{ clickable: true }"
+    :pagination="{ type: 'fraction' }"
     :scrollbar="{ draggable: true }"
     @swiper="onSwiper"
     @slideChange="onSlideChange"
@@ -88,12 +102,12 @@
         <div class="swiper_navigation_arrows-body">
           <div class="prevArrow"></div>
         </div>
-        <div class="swiper_navigation_arrows-body">
+        <div class="swiper_navigation_arrows-body" >
           <div class="nextArrow"></div>
         </div>
       </div>
       <p class="swiper_navigation_text-light">Листайте дальше</p>
-      <p class="swiper_navigation_counter"><span>01</span>/08</p>
+      <!-- <p class="swiper_navigation_counter"><span>0{{ state.sliderCounter }}</span>/08</p> -->
     </div>
   </swiper>
 </template>
