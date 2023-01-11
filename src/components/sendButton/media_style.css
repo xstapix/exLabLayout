@@ -1,0 +1,8 @@
+@media (max-width: 428px) {
+    .sendButton_body {
+        width: 100%;
+    }
+    .sendButton {
+        width: 100%;
+    }
+}

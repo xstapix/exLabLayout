@@ -65,6 +65,10 @@
     margin: 75px 0 0 0;
 }
 
+.watch {
+    position: relative;
+}
+
 .watch::before {
     position: absolute;
     left: -10px;
@@ -138,10 +142,6 @@
     font-size: 13px;
     font-weight: 300;
     color: #516176;
-}
-
-.watch {
-    position: relative;
 }
 
 .howItWorks {
@@ -250,6 +250,10 @@
 .dots {
     margin: -130px 0 0;
     height: 15px;
+}
+
+.dots_additional {
+    display: none;
 }
 
 .dots-img {
@@ -469,7 +473,7 @@
 }
 
 .quiz_body_options-prev-step {
-    padding: 21px 73px;
+    padding: 21px 61px;
     font-weight: 400;
     font-size: 20px;
     color: #2783FE;

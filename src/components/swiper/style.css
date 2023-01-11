@@ -18,7 +18,7 @@
 .swiper_item-body {
     position: relative;
     z-index: 11;
-    width: 490px;
+    width: 100%;
     height: 402px;
     padding: 10px 10px 0 10px;
     background-color: #FFFFFF;
@@ -53,6 +53,16 @@
 
 .swiper_item_text {
     padding: 22px 24px 0 24px;
+}
+
+.swiper_navigation-img_body {
+    display: none;
+    height: 36px;
+    margin: 0 0 0 94px;
+}
+
+.swiper_navigation-img {
+    max-height: 100%;
 }
 
 .swiper {

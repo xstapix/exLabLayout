@@ -5,6 +5,7 @@
   import { reactive } from 'vue';
 
   import './style.css'
+  import './media_style.css'
 
   const state = reactive({
     swiperList: [
@@ -59,24 +60,12 @@
     ],
     sliderCounter: 1
   })
-
-  const handlerPrev = () => {
-    if (state.sliderCounter != 1) {
-      state.sliderCounter--
-    }
-  }
-
-  const handlerNext = () => {
-    if (state.sliderCounter != 8) {
-      state.sliderCounter++
-    }
-  }
   
 </script>
 <template>
   <swiper
     :modules="[Navigation, Pagination, A11y]"
-    :slides-per-view="3"
+    :slides-per-view="1"
     :space-between="30"
     :navigation="{ nextEl: '.nextArrow', prevEl: '.prevArrow', hideOnClick: true,}"
     :pagination="{ type: 'fraction' }"
@@ -87,7 +76,7 @@
     <swiper-slide v-for="item in state.swiperList" :id="item.id" key="{{ item.id }}">
       <section class="swiper_item">
         <div class="swiper_item-body">
-          <div class="swiper_item_img-body">
+          <div class="swiper_item_img-body" >
             <img class="swiper_item_img" :src="`${item.url}`" alt="" srcset="">
           </div>
           <div class="swiper_item_text">
@@ -97,7 +86,7 @@
         </div>
       </section>
     </swiper-slide>
-    <div class="swiper_navigation DF AIC">
+    <div class="swiper_navigation DF AIC JCC">
       <div class="DF">
         <div class="swiper_navigation_arrows-body">
           <div class="prevArrow"></div>
@@ -107,7 +96,9 @@
         </div>
       </div>
       <p class="swiper_navigation_text-light">Листайте дальше</p>
-      <!-- <p class="swiper_navigation_counter"><span>0{{ state.sliderCounter }}</span>/08</p> -->
+      <div class="swiper_navigation-img_body">
+        <img class="swiper_navigation-img" src="/slide.svg" alt="">
+      </div>
     </div>
   </swiper>
 </template>

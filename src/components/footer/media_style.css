@@ -1,0 +1,30 @@
+@media (max-width: 428px) {
+    .down_footer {
+        padding: 36px 20px;
+    }
+    .footer_body {
+        width: 100%;
+    }
+    .down_footer_info_logo {
+        height: 63px;
+    }
+    .down_footer_social {
+        display: none;
+    }
+    .down_footer_info_nav {
+        text-align: center;
+        margin: 50px 0;
+    }
+    .down_footer_info_nav-pharagraph {
+        margin: 0 0 30px 0;
+    }
+    .paySystem {
+        position: relative;
+    }
+    .paySystem-img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}

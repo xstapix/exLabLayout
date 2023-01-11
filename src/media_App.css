@@ -35,4 +35,128 @@
     .watch {
         margin: 32px 0 0;
     }
+    .watch::before {
+        left: calc(50% - 156px);
+    }
+    .watch::after {
+        left: calc(50% - 166px);
+    }
+    .howItWorks_header {
+        margin: 60px 0 30px;
+        font-size: 30px;
+    }
+    .dots,
+    .dots_additional {
+        margin: 0 0 30px;
+        height: 85px;
+    }
+    .dots_additional {
+        display: flex;
+    }
+    .one::before,
+    .two::before,
+    .three::before,
+    .four::before {
+        display: none;
+        content: none;
+    }
+    .howItWorks_strong_text {
+        font-size: 20px;
+    }
+    .howItWorks_light_text {
+        font-size: 18px;
+    }
+    .howItWorks_text {
+        margin: 40px 0 30px;
+    }
+    .howItWorks_item-first,
+    .howItWorks_item-two,
+    .howItWorks_item-three {
+        width: 100%;
+    }
+    .howItWorks_item-img-first {
+        position: absolute;
+        left: -0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .howItWorks_item-img-two {
+        left: -20px;
+        right: 0;
+        margin: 0 auto;
+    }
+    .howItWorks_item-three {
+        margin: 70px auto 0;
+    }
+    .howItWorks_item-img-three {
+        left: -20px;
+        right: 0;
+        width: 340px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .howItWorks_happy-body {
+        width: 100%;
+        height: 336px;
+        margin: -70px 0 0;
+    }
+    .howItWorks_happy_content {
+        margin: 40px 0 0;
+    }
+    .howItWorks_happy-img {
+        background: url('/girl4.png');
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: calc(50% - 116px) bottom;
+    }
+    .howItWorks_happy_text-strong {
+        font-size: 22px;
+    }
+    .howItWorks_happy_text-light {
+        width: 100%;
+        font-size: 18px;
+    }
+    .occasionsToSend-content_header {
+        width: 205px;
+        font-size: 30px;
+    }
+    .occasionsToSend-content {
+        margin: -900px auto 0;
+    }
+    .occasionsToSend-background {
+        width: 100%;
+        height: 1042px;
+        background-image: url('/happyGirl.svg'), url('/Camera-mobil.png'), url('/cloudReverse.png'), url('/beigeBack.png');
+        background-repeat: no-repeat;
+        background-size: 247px 381px, auto, 100% 160px, cover;
+        background-position: calc(50% + 61px) 226px, calc(50% - 70px) 219px, top left, top left;
+    }
+    .quiz {
+        width: 100%;
+    }
+    .quiz_body_girl {
+        display: none;
+    }
+    .quiz_body {
+        padding: 0;
+    }
+    .quiz_body_options-prev-step {
+        margin: 0 auto 20px;
+    }
+    .quiz_body_options-next-step {
+        margin: auto;
+    }
+    .quiz_body_options_item_preview {
+        margin: 0 0 60px;
+    }
+    .quiz_body_options-margin-fix {
+        margin: 40px 20px 0;
+    }
+    .quiz_margin_button_fix {
+        margin: 55px 0 0;
+    }
+    .quiz_body_options_title {
+        margin: 0 20px;
+        font-size: 22px;
+    }
 }

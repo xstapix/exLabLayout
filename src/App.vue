@@ -161,10 +161,9 @@
       </div>
     </section>
   </section>
-   <!-- 
   <section class="howItWorks container">
     <h2 class="howItWorks_header">Как это работает?</h2>
-    <section class="DF AIC JCSB">
+    <section class="DF DB AIC JCSB">
       <div >
         <div class="howItWorks_item-first">
           <img class="howItWorks_item-img-first" src="/makeSelfi.png" alt="make selfi"/>
@@ -174,8 +173,13 @@
           <p class="howItWorks_light_text">Вы делаете селфи или выбираете удачное фото из галереи JoyKa</p>
         </div>
       </div>
-      <div class="dots">
-        <img class="dots-img" src="/dotOrange.svg" alt="dots"/>
+      <div class="dots DF JCC">
+        <picture>
+          <source class="dots-img" 
+            srcset="/dotOrange.svg"
+            media="(min-width: 428px)">
+          <img  class="dots-img" src="/dots_orange-modil.svg" alt="dots">
+        </picture>
       </div>
       <div>
         <div class="howItWorks_item-two">
@@ -186,8 +190,13 @@
           <p class="howItWorks_light_text">Оставляете заявку на сайте или в приложении. Две минуты  и JoyKa готова!</p>
         </div>
       </div>
-      <div class="dots">
-        <img src="/dotBlue.svg" alt="dots"/>
+      <div class="dots DF JCC">
+        <picture>
+          <source class="dots-img" 
+            srcset="/dotBlue.svg"
+            media="(min-width: 428px)">
+          <img class="dots-img" src="/dots_blue-mobil.svg" alt="dots">
+        </picture>
       </div>
       <div>
         <div class="howItWorks_item-three">
@@ -199,7 +208,15 @@
         </div>
       </div>
     </section>
-    <section class="DF AIC howItWorks_happy_block">
+    <div class="dots_additional JCC">
+        <picture>
+          <source class="dots-img" 
+            srcset="/dotOrange.svg"
+            media="(min-width: 428px)">
+          <img  class="dots-img" src="/dots_orange-modil.svg" alt="dots">
+        </picture>
+      </div>
+    <section class="DF DB AIC howItWorks_happy_block">
       <div class="howItWorks_happy-body">
         <div class="howItWorks_happy-gradient"></div>
         <div class="howItWorks_happy-img"></div>
@@ -236,7 +253,7 @@
         </div>
         <div>
           <p class="quiz_body_options_title">{{ state.quizQuestions[state.quizActiveQuestion].question }}</p>
-          <div class="DF JCSB">
+          <div class="DF JCSB FWW quiz_body_options-margin-fix">
             <label 
               v-for="item in state.quizQuestions[state.quizActiveQuestion].options" 
               :for='item.id' 
@@ -252,14 +269,14 @@
               <p class="quiz_body_options_item-name">{{item.name}}</p>
             </label>
           </div>
-          <div class="DF JCSB quiz_margin_button_fix">
-            <button class="quiz_body_options-prev-step" @click="handlerPrevButton">Предыдущий шаг</button>
-            <button class="quiz_body_options-next-step" @click="handlerNextButton">Следующий шаг</button>
+          <div class="DF DB JCSB quiz_margin_button_fix">
+            <button class="quiz_body_options-prev-step DF JCC" @click="handlerPrevButton">Предыдущий шаг</button>
+            <button class="quiz_body_options-next-step DF JCC" @click="handlerNextButton">Следующий шаг</button>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
-  <!-- <Footer/> -->
+  </section>
+  <Footer/>
 </template>
 
