@@ -1,15 +1,23 @@
 @media (max-width: 428px) {
     .swiper_item {
-        width: 320px;
+        width: 100vw;
+    }
+    .swiper_item::before {
+        width: 87%;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
     }
     .swiper_item-body {
+        width: 90%;
         height: 378px;
+        margin: auto;
     }
     .swiper_item_img-body {
         height: 158px;
     }
     .swiper {
-        padding: 315px 0 0 20px;
+        padding: 315px 0 0 0;
     }
     .swiper_navigation {
         margin: 40px 0;

@@ -60,25 +60,26 @@
     ],
     sliderCounter: 1
   })
- 
-  let slidesView = 3
-
-  if(screen.width <= 428){
-    slidesView = 1
-  }
   
 </script>
 <template>
   <swiper
     :modules="[Navigation, Pagination, A11y]"
-    :slides-per-view="slidesView"
-    :centeredSlides="true"
     :space-between="30"
     :navigation="{ nextEl: '.nextArrow', prevEl: '.prevArrow', hideOnClick: true,}"
     :pagination="{ type: 'fraction' }"
     :scrollbar="{ draggable: true }"
-    @swiper="onSwiper"
-    @slideChange="onSlideChange"
+    :breakpoints="{
+      '428': {
+        slidesPerView: 1,
+        centeredSlides: true 
+      },
+      '1220': {
+        slidesPerView: 3,
+        centeredSlides: false
+      },
+    }"
+    
   >
     <swiper-slide v-for="item in state.swiperList" :id="item.id" key="{{ item.id }}">
       <section class="swiper_item">

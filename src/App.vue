@@ -105,6 +105,7 @@
   })
 
   const deltaPercent = 100 / state.quizQuestions.length
+  const deltaPercentMobil = 180 / state.quizQuestions.length
 
   const handlerNextButton = () => {
     if (state.quizActiveQuestion !== state.quizQuestions.length-1) {
@@ -252,8 +253,25 @@
             :style="{width: deltaPercent * (state.quizActiveQuestion + 1)  + '%'}"></div>
         </div>
         <div>
-          <p class="quiz_body_options_title">{{ state.quizQuestions[state.quizActiveQuestion].question }}</p>
-          <div class="DF JCC FWW quiz_body_options-margin-fix">
+          <div class="quiz_body_options_steps container">
+            <div class="quiz_body_options_progressBar-mobil">
+              <div class="circle">
+                <div class="mask half">
+                  <div class="fill" 
+                    :style="{transform: `rotate(${deltaPercentMobil * (state.quizActiveQuestion + 1)  + 'deg'})`}"></div>
+                </div>
+                <div class="mask full" 
+                  :style="{transform: `rotate(${deltaPercentMobil * (state.quizActiveQuestion + 1)  + 'deg'})`}">
+                  <div class="fill" 
+                    :style="{transform: `rotate(${deltaPercentMobil * (state.quizActiveQuestion + 1)  + 'deg'})`}"></div>
+                </div>
+                <div class="inside-circle"> {{ state.quizActiveQuestion + 1 }} из {{ state.quizQuestions.length }} </div>
+              </div>
+            </div>
+            <p class="quiz_body_options_title">{{ state.quizQuestions[state.quizActiveQuestion].question }}</p>
+          </div>
+          <p class="quiz_body_options_title-desktop">{{ state.quizQuestions[state.quizActiveQuestion].question }}</p>
+          <div class="DF JCSB FWW quiz_body_options-margin-fix">
             <label 
               v-for="item in state.quizQuestions[state.quizActiveQuestion].options" 
               :for='item.id' 
@@ -269,7 +287,7 @@
               <p class="quiz_body_options_item-name">{{item.name}}</p>
             </label>
           </div>
-          <div class="DF DB JCSB quiz_margin_button_fix">
+          <div class="DF JCSB quiz_margin_button_fix">
             <button class="quiz_body_options-prev-step DF JCC" @click="handlerPrevButton">Предыдущий шаг</button>
             <button class="quiz_body_options-next-step DF JCC" @click="handlerNextButton">Следующий шаг</button>
           </div>

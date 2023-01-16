@@ -414,7 +414,15 @@
     border-radius: 5px;
 }
 
-.quiz_body_options_title {
+.quiz_body_options_progressBar-mobil {
+    display: none;
+}
+
+.quiz_body_options_steps {
+    display: none;
+}
+
+.quiz_body_options_title-desktop {
     margin: 41px 0 23px;
     font-weight: 700;
     font-size: 27px;

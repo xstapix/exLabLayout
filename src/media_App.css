@@ -141,10 +141,10 @@
         padding: 0;
     }
     .quiz_body_options-prev-step {
-        margin: 0 auto 20px;
+        margin: auto;
     }
     .quiz_body_options-next-step {
-        margin: auto;
+        margin: 0 auto 20px;
     }
     .quiz_body_options_item_preview {
         margin: 0 0 60px;
@@ -153,11 +153,19 @@
         margin: 40px 20px 0;
     }
     .quiz_margin_button_fix {
+        flex-direction: column-reverse;
         margin: 55px 0 0;
     }
     .quiz_body_options_title {
+        width: 190px;
         margin: 0 20px;
         font-size: 22px;
+        margin: 0 0 0 20px;
+        font-weight: 700;
+        color: #172C48;
+    }
+    .quiz_body_options_title-desktop {
+        display: none;
     }
     .quiz::before {
         content: none;
@@ -168,5 +176,48 @@
     .quiz_body_options_item_preview-margin_fix {
         margin-right: 10px;
         margin-left: 10px;
+    }
+    .quiz_body_options_progressBar {
+        display: none;
+    }
+    .quiz_body_options_steps {
+        display: flex;
+        align-items: center;
+    }
+    .quiz_body_options_progressBar-mobil {
+        display: block;
+        width: 94px;
+        height: 94px;
+        background: #DAEDFF;
+        border-radius: 50%;
+    }
+    .quiz_body_options_progressBar-mobil .circle .mask,
+    .quiz_body_options_progressBar-mobil .circle .fill {
+        width: 94px;
+        height: 94px;
+        position: absolute;
+        border-radius: 50%;
+    }
+    .mask .fill {
+        clip: rect(0px, 47px, 94px, 0px);
+        background-color: #2783FE;
+    }
+    .quiz_body_options_progressBar-mobil .circle .mask {
+        clip: rect(0px, 94px, 94px, 47px);
+    }
+    .quiz_body_options_progressBar-mobil .inside-circle {
+        position: absolute;
+        z-index: 100;
+        width: 69px;
+        height: 69px;
+        margin-top: 13px;
+        margin-left: 13px;
+        border-radius: 50%;
+        background: #ffffff;
+        line-height: 69px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        color: #8B96A4;
     }
 }
