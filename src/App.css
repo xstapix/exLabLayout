@@ -160,7 +160,6 @@
 
 .howItWorks_text {
     position: relative;
-    width: 250px;
     margin: 48px 0 0 58px;
 }
 
@@ -173,7 +172,7 @@
     top: -30px;
     font-family: 'Neucha', cursive;
     font-weight: 400;
-    font-size: 200px;
+    font-size: 180px;
     background: linear-gradient(180deg, #F09819 0%, #EF7821 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -211,18 +210,18 @@
     color: #516176;
 }
 
-.howItWorks_item-first {
+.howItWorks_item {
     width: 336px;
+}
+
+.howItWorks_item-img_body {
+    position: relative;
     height: 330px;
 }
 
 .howItWorks_item-img-first {
-    width: 336px;
-    height: 330px;
-}
-
-.howItWorks_item-two {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     width: 336px;
     height: 330px;
 }
@@ -234,12 +233,6 @@
     height: 343px;
 }
 
-.howItWorks_item-three {
-    position: relative;
-    width: 336px;
-    height: 330px;
-}
-
 .howItWorks_item-img-three {
     position: absolute;
     bottom: 0;
@@ -248,7 +241,7 @@
 }
 
 .dots {
-    margin: -130px 0 0;
+    margin: 180px 0 0;
     height: 15px;
 }
 
@@ -331,10 +324,10 @@
 .occasionsToSend-background {
     width: 100%;
     height: 1342px;
-    background-image: url('/happyGirl.svg'), url('/Vector-2.svg'), url('/Vector-1.svg'), url('/Vector.svg'), url('/Camera.png'), url('/cloudReverse.png'), url('/beigeBack.png');
+    background-image: url('/happyGirl.svg'), url('/Camera.png'), url('/Vector-2.svg'), url('/Vector-1.svg'), url('/Vector.svg'), url('/cloudReverse.png'), url('/beigeBack.png');
     background-repeat: no-repeat;
     background-size: auto, auto, auto, auto, auto, 100% 324px, cover;
-    background-position: calc(50% + 360px) 320px, top 350px left, top 550px right, calc(50% - 150px) 650px, calc(50% - 460px) 350px, top left, top left;
+    background-position: calc(50% + 360px) 320px, calc(50% - 460px) 350px, top 350px left, top 550px right, calc(50% - 150px) 650px, top left, top left;
 }
 
 .occasionsToSend-content {

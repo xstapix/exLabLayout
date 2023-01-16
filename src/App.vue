@@ -163,9 +163,9 @@
   </section>
   <section class="howItWorks container">
     <h2 class="howItWorks_header">Как это работает?</h2>
-    <section class="DF DB AIC JCSB">
-      <div >
-        <div class="howItWorks_item-first">
+    <section class="DF DB JCSB">
+      <div class="howItWorks_item">
+        <div class="howItWorks_item-img_body">
           <img class="howItWorks_item-img-first" src="/makeSelfi.png" alt="make selfi"/>
         </div>
         <div class="howItWorks_text one">
@@ -181,8 +181,8 @@
           <img  class="dots-img" src="/dots_orange-modil.svg" alt="dots">
         </picture>
       </div>
-      <div>
-        <div class="howItWorks_item-two">
+      <div class="howItWorks_item">
+        <div class="howItWorks_item-img_body">
           <img class="howItWorks_item-img-two" src="/craftEnvelopeGirl.png" alt="make Envelope"/>
         </div>
         <div class="howItWorks_text two">
@@ -198,8 +198,8 @@
           <img class="dots-img" src="/dots_blue-mobil.svg" alt="dots">
         </picture>
       </div>
-      <div>
-        <div class="howItWorks_item-three">
+      <div class="howItWorks_item">
+        <div class="howItWorks_item-img_body">
           <img class="howItWorks_item-img-three" src="/Courier.png" alt="Courier"/>
         </div>
         <div class="howItWorks_text three">  
@@ -209,13 +209,13 @@
       </div>
     </section>
     <div class="dots_additional JCC">
-        <picture>
-          <source class="dots-img" 
-            srcset="/dotOrange.svg"
-            media="(min-width: 428px)">
-          <img  class="dots-img" src="/dots_orange-modil.svg" alt="dots">
-        </picture>
-      </div>
+      <picture>
+        <source class="dots-img" 
+          srcset="/dotOrange.svg"
+          media="(min-width: 428px)">
+        <img  class="dots-img" src="/dots_orange-modil.svg" alt="dots">
+      </picture>
+    </div>
     <section class="DF DB AIC howItWorks_happy_block">
       <div class="howItWorks_happy-body">
         <div class="howItWorks_happy-gradient"></div>
@@ -253,11 +253,11 @@
         </div>
         <div>
           <p class="quiz_body_options_title">{{ state.quizQuestions[state.quizActiveQuestion].question }}</p>
-          <div class="DF JCSB FWW quiz_body_options-margin-fix">
+          <div class="DF JCC FWW quiz_body_options-margin-fix">
             <label 
               v-for="item in state.quizQuestions[state.quizActiveQuestion].options" 
               :for='item.id' 
-              class="quiz_body_options_item_preview">
+              class="quiz_body_options_item_preview quiz_body_options_item_preview-margin_fix">
               <img 
                 class="quiz_body_options_item_preview-img" 
                 src="/Rectangle 1757.png" alt="country">

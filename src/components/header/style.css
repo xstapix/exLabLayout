@@ -43,9 +43,10 @@
     cursor: pointer;
 }
 
-.lang:hover>.lang_dropDown {
+
+/* .lang:hover>.lang_dropDown {
     display: block;
-}
+} */
 
 .lang_flag {
     width: 28px;
@@ -59,7 +60,7 @@
 
 .lang p {
     font-weight: 700;
-    font-size: 16;
+    font-size: 16px;
     margin: 0 10px 0 0;
 }
 
@@ -78,11 +79,15 @@
     margin: 0 0 10px 0;
 }
 
-.lang_dropDown {
+.lang_dropDown-none {
+    display: none;
+}
+
+.lang_dropDown-active {
     position: absolute;
     z-index: 1;
     bottom: -67px;
-    display: none;
+    display: block;
     width: 100%;
     padding: 10px;
     font-weight: 700;
@@ -92,7 +97,7 @@
     background-color: rgb(255, 255, 255);
 }
 
-.lang_dropDown ul {
+.lang_dropDown-active ul {
     position: relative;
     margin: 0;
 }
@@ -103,7 +108,7 @@
     content: '';
     width: 28px;
     height: 20px;
-    background: url('/RU.webp');
+    background: url('/AF.svg');
 }
 
 .lang_dropDown-item_en::before {

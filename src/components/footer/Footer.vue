@@ -7,7 +7,7 @@
   <footer class="down_footer">
     <section class="footer_body AIC JCSB">
       <section class="down_footer_info DF DB AIC JCSB">
-        <div class="DF AIC">
+        <div class="DF AIC JCSB">
           <div class="down_footer_info_logo">
             <img class="down_footer_info_logo-img" src="/bigLogo.svg" alt="Logo" srcset=""/>
           </div>

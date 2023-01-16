@@ -3,9 +3,9 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background-image: url('/cloud.png'), url('/girl.svg'), url('/craftEnvelope-mobil.svg'), url('/craftEnvelope2-mobil.svg'), url('/Balloon-mobil.svg'), url('/helloBlock.jpg');
+        background-image: url('/cloud.png'), url('/girl-mobil.svg'), url('/craftEnvelope-mobil.svg'), url('/craftEnvelope2-mobil.svg'), url('/Balloon-mobil.svg'), url('/helloBlock.jpg');
         background-repeat: no-repeat;
-        background-size: 100% 324px, 100% 421px, auto, auto, auto, cover;
+        background-size: 100% 324px, auto, auto, auto, auto, cover;
         background-position: bottom -100px left, top 230px center, calc(50% + 60px) 340px, calc(50% + 105px) 420px, calc(50% - 40px) 371px, top left;
     }
     .helloBlock {
@@ -129,7 +129,7 @@
         background-image: url('/happyGirl.svg'), url('/Camera-mobil.png'), url('/cloudReverse.png'), url('/beigeBack.png');
         background-repeat: no-repeat;
         background-size: 247px 381px, auto, 100% 160px, cover;
-        background-position: calc(50% + 61px) 226px, calc(50% - 70px) 219px, top left, top left;
+        background-position: calc(50% + 61px) 226px, top 219px left, top left, top left;
     }
     .quiz {
         width: 100%;
@@ -158,5 +158,15 @@
     .quiz_body_options_title {
         margin: 0 20px;
         font-size: 22px;
+    }
+    .quiz::before {
+        content: none;
+    }
+    .quiz_body {
+        box-shadow: none;
+    }
+    .quiz_body_options_item_preview-margin_fix {
+        margin-right: 10px;
+        margin-left: 10px;
     }
 }

@@ -5,8 +5,23 @@
 
   const state = reactive({
     lang: 'EN',
+    activeLang: false,
     menuActive: false
   })
+
+  const handlerLang = () => {
+    state.activeLang = !state.activeLang
+  }
+
+  const handlerMenu = () => {
+    state.menuActive = !state.menuActive
+    
+    if (state.menuActive) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'visible'
+    }
+  }
 </script>
 
 <template>
@@ -34,24 +49,24 @@
           </li>
         </ul>
       </nav>
-      <div class="lang DF">
+      <div class="lang DF" @click="handlerLang">
         <p class="color_2783FE">{{state.lang}}</p>
         <div class="lang_flag">
-          <img class="lang_flag-img" :src='`${state.lang == "EN" ? "/EN.svg" : "/RU.webp"}`' alt="flag" srcset=""/>
+          <img class="lang_flag-img" :src='`/${state.lang}.svg`' alt="flag" srcset=""/>
         </div>
         <div class="arrow_down"></div>
-        <div class="lang_dropDown">
+        <div :class="state.activeLang ? 'lang_dropDown-active' : 'lang_dropDown-none'">
           <ul>
-            <li class="lang_dropDown-item_ru lang_margin_fix color_2783FE" @click="state.lang = 'RU'">RU</li>
+            <li class="lang_dropDown-item_ru lang_margin_fix color_2783FE" @click="state.lang = 'AF'">AF</li>
             <li class="lang_dropDown-item_en color_2783FE" @click="state.lang = 'EN'">EN</li>
           </ul>
         </div>
       </div>
-      <div class="header_nav-modil_menu" @click="state.menuActive = !state.menuActive">
+      <div class="header_nav-modil_menu" @click="handlerMenu">
         <img class="header_nav-modil_menu-img" src="/menu.svg" alt="" srcset="">
       </div>
       <nav :class="state.menuActive ? 'header_nav-modil' : 'DN'">
-        <div class="header_nav-modil_close DF JCE" @click="state.menuActive = !state.menuActive">
+        <div class="header_nav-modil_close DF JCE" @click="handlerMenu">
           <img class="header_nav-modil_close-img" src="/close.svg" alt="" srcset="">
         </div>
         <ul class="DB" >
