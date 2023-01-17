@@ -245,6 +245,18 @@
     height: 15px;
 }
 
+.dots_orange{
+    width: 85px;
+    height: 15px;
+    background-image: url('/dotOrange.svg');
+}
+
+.dots_blue{
+    width: 85px;
+    height: 15px;
+    background-image: url("/dotBlue.svg");
+}
+
 .dots_additional {
     display: none;
 }

@@ -174,13 +174,7 @@
           <p class="howItWorks_light_text">Вы делаете селфи или выбираете удачное фото из галереи JoyKa</p>
         </div>
       </div>
-      <div class="dots DF JCC">
-        <picture>
-          <source class="dots-img" 
-            srcset="/dotOrange.svg"
-            media="(min-width: 428px)">
-          <img  class="dots-img" src="/dots_orange-modil.svg" alt="dots">
-        </picture>
+      <div class="dots dots_orange">
       </div>
       <div class="howItWorks_item">
         <div class="howItWorks_item-img_body">
@@ -191,13 +185,7 @@
           <p class="howItWorks_light_text">Оставляете заявку на сайте или в приложении. Две минуты  и JoyKa готова!</p>
         </div>
       </div>
-      <div class="dots DF JCC">
-        <picture>
-          <source class="dots-img" 
-            srcset="/dotBlue.svg"
-            media="(min-width: 428px)">
-          <img class="dots-img" src="/dots_blue-mobil.svg" alt="dots">
-        </picture>
+      <div class="dots dots_blue">
       </div>
       <div class="howItWorks_item">
         <div class="howItWorks_item-img_body">
@@ -209,14 +197,7 @@
         </div>
       </div>
     </section>
-    <div class="dots_additional JCC">
-      <picture>
-        <source class="dots-img" 
-          srcset="/dotOrange.svg"
-          media="(min-width: 428px)">
-        <img  class="dots-img" src="/dots_orange-modil.svg" alt="dots">
-      </picture>
-    </div>
+    <div class="dots_additional"></div>
     <section class="DF DB AIC howItWorks_happy_block">
       <div class="howItWorks_happy-body">
         <div class="howItWorks_happy-gradient"></div>

@@ -51,7 +51,24 @@
         height: 85px;
     }
     .dots_additional {
-        display: flex;
+        display: block;
+        margin: 0 auto;
+        width: 15px;
+        height: 85px;
+        background-image: url('/dots_orange-modil.svg');
+        background-repeat: no-repeat;
+    }
+    .dots_blue{
+        margin: 0 auto 30px;
+        width: 15px;
+        height: 85px;
+        background-image: url("/dots_blue-mobil.svg");
+    }
+    .dots_orange{
+        margin: 0 auto 30px;
+        width: 15px;
+        height: 85px;
+        background-image: url("/dots_orange-modil.svg");
     }
     .one::before,
     .two::before,
